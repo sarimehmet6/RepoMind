@@ -205,3 +205,10 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# RepoMind specific
+benchmarks/
+repomind_report/
+results*.csv
+scan.json
