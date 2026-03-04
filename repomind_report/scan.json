@@ -1,0 +1,286 @@
+{
+  "path": "/home/mehmetsari/RepoMind",
+  "valid": true,
+  "source_files": 15,
+  "total_lines": 1751,
+  "long_files": [
+    {
+      "path": "repomind/context_builder.py",
+      "lines": 447
+    },
+    {
+      "path": "repomind/scanners/repo_scanner.py",
+      "lines": 570
+    }
+  ],
+  "todo_count": 4,
+  "fixme_count": 4,
+  "per_file_stats": {
+    "cli.py": {
+      "lines": 6,
+      "function_count": 0,
+      "class_count": 0
+    },
+    "repomind/__init__.py": {
+      "lines": 1,
+      "function_count": 0,
+      "class_count": 0
+    },
+    "repomind/analyzers/__init__.py": {
+      "lines": 5,
+      "function_count": 0,
+      "class_count": 0
+    },
+    "repomind/analyzers/architecture_analyzer.py": {
+      "lines": 132,
+      "function_count": 4,
+      "class_count": 2
+    },
+    "repomind/architecture_analyzer.py": {
+      "lines": 91,
+      "function_count": 7,
+      "class_count": 1
+    },
+    "repomind/cli.py": {
+      "lines": 35,
+      "function_count": 3,
+      "class_count": 0
+    },
+    "repomind/context_builder.py": {
+      "lines": 447,
+      "function_count": 14,
+      "class_count": 1
+    },
+    "repomind/core/__init__.py": {
+      "lines": 9,
+      "function_count": 0,
+      "class_count": 0
+    },
+    "repomind/core/llm_client.py": {
+      "lines": 62,
+      "function_count": 2,
+      "class_count": 1
+    },
+    "repomind/core/scorer.py": {
+      "lines": 65,
+      "function_count": 3,
+      "class_count": 1
+    },
+    "repomind/orchestrator.py": {
+      "lines": 198,
+      "function_count": 3,
+      "class_count": 0
+    },
+    "repomind/scanners/__init__.py": {
+      "lines": 5,
+      "function_count": 0,
+      "class_count": 0
+    },
+    "repomind/scanners/repo_scanner.py": {
+      "lines": 570,
+      "function_count": 21,
+      "class_count": 0
+    },
+    "repomind/scoring/__init__.py": {
+      "lines": 5,
+      "function_count": 0,
+      "class_count": 0
+    },
+    "repomind/scoring/architecture_score.py": {
+      "lines": 120,
+      "function_count": 1,
+      "class_count": 0
+    }
+  },
+  "dependency_stats": {
+    "import_map": {
+      "cli.py": [
+        "repomind/cli.py"
+      ],
+      "repomind/__init__.py": [],
+      "repomind/analyzers/__init__.py": [
+        "repomind/analyzers/architecture_analyzer.py"
+      ],
+      "repomind/analyzers/architecture_analyzer.py": [
+        "repomind/core/llm_client.py"
+      ],
+      "repomind/architecture_analyzer.py": [],
+      "repomind/cli.py": [
+        "repomind/orchestrator.py"
+      ],
+      "repomind/context_builder.py": [
+        "repomind/scanners/repo_scanner.py"
+      ],
+      "repomind/core/__init__.py": [
+        "repomind/core/llm_client.py",
+        "repomind/core/scorer.py"
+      ],
+      "repomind/core/llm_client.py": [],
+      "repomind/core/scorer.py": [],
+      "repomind/orchestrator.py": [
+        "repomind/analyzers/architecture_analyzer.py",
+        "repomind/context_builder.py",
+        "repomind/core/llm_client.py",
+        "repomind/core/scorer.py",
+        "repomind/scanners/repo_scanner.py"
+      ],
+      "repomind/scanners/__init__.py": [
+        "repomind/scanners/repo_scanner.py"
+      ],
+      "repomind/scanners/repo_scanner.py": [],
+      "repomind/scoring/__init__.py": [
+        "repomind/scoring/architecture_score.py"
+      ],
+      "repomind/scoring/architecture_score.py": []
+    },
+    "in_degree": {
+      "cli.py": 0,
+      "repomind/__init__.py": 0,
+      "repomind/analyzers/__init__.py": 0,
+      "repomind/analyzers/architecture_analyzer.py": 2,
+      "repomind/architecture_analyzer.py": 0,
+      "repomind/cli.py": 1,
+      "repomind/context_builder.py": 1,
+      "repomind/core/__init__.py": 0,
+      "repomind/core/llm_client.py": 3,
+      "repomind/core/scorer.py": 2,
+      "repomind/orchestrator.py": 1,
+      "repomind/scanners/__init__.py": 0,
+      "repomind/scanners/repo_scanner.py": 3,
+      "repomind/scoring/__init__.py": 0,
+      "repomind/scoring/architecture_score.py": 1
+    },
+    "circular_dependencies": [],
+    "cycle_analysis": {
+      "tight_coupling_count": 0,
+      "layer_leak_count": 0,
+      "structural_cycle_count": 0,
+      "cycles": []
+    },
+    "folder_coupling": {
+      ".": {
+        "external_dependencies": 1,
+        "depends_on": [
+          "repomind"
+        ]
+      },
+      "repomind": {
+        "external_dependencies": 0,
+        "depends_on": []
+      }
+    },
+    "cross_folder_dependency_ratio": 0.07142857142857142,
+    "possible_import_resolution_issue": false
+  },
+  "architectural_risks": {
+    "tight_coupling_pairs": [],
+    "core_modules": [
+      {
+        "path": "repomind/orchestrator.py",
+        "in_degree": 1,
+        "out_degree": 5,
+        "normalized_in": 0.3333,
+        "normalized_out": 1.0,
+        "centrality_score": 0.6667
+      },
+      {
+        "path": "repomind/core/llm_client.py",
+        "in_degree": 3,
+        "out_degree": 0,
+        "normalized_in": 1.0,
+        "normalized_out": 0.0,
+        "centrality_score": 0.5
+      },
+      {
+        "path": "repomind/scanners/repo_scanner.py",
+        "in_degree": 3,
+        "out_degree": 0,
+        "normalized_in": 1.0,
+        "normalized_out": 0.0,
+        "centrality_score": 0.5
+      },
+      {
+        "path": "repomind/analyzers/architecture_analyzer.py",
+        "in_degree": 2,
+        "out_degree": 1,
+        "normalized_in": 0.6667,
+        "normalized_out": 0.2,
+        "centrality_score": 0.4333
+      },
+      {
+        "path": "repomind/core/scorer.py",
+        "in_degree": 2,
+        "out_degree": 0,
+        "normalized_in": 0.6667,
+        "normalized_out": 0.0,
+        "centrality_score": 0.3333
+      },
+      {
+        "path": "repomind/cli.py",
+        "in_degree": 1,
+        "out_degree": 1,
+        "normalized_in": 0.3333,
+        "normalized_out": 0.2,
+        "centrality_score": 0.2667
+      },
+      {
+        "path": "repomind/context_builder.py",
+        "in_degree": 1,
+        "out_degree": 1,
+        "normalized_in": 0.3333,
+        "normalized_out": 0.2,
+        "centrality_score": 0.2667
+      },
+      {
+        "path": "repomind/core/__init__.py",
+        "in_degree": 0,
+        "out_degree": 2,
+        "normalized_in": 0.0,
+        "normalized_out": 0.4,
+        "centrality_score": 0.2
+      },
+      {
+        "path": "repomind/scoring/architecture_score.py",
+        "in_degree": 1,
+        "out_degree": 0,
+        "normalized_in": 0.3333,
+        "normalized_out": 0.0,
+        "centrality_score": 0.1667
+      },
+      {
+        "path": "cli.py",
+        "in_degree": 0,
+        "out_degree": 1,
+        "normalized_in": 0.0,
+        "normalized_out": 0.2,
+        "centrality_score": 0.1
+      },
+      {
+        "path": "repomind/analyzers/__init__.py",
+        "in_degree": 0,
+        "out_degree": 1,
+        "normalized_in": 0.0,
+        "normalized_out": 0.2,
+        "centrality_score": 0.1
+      },
+      {
+        "path": "repomind/scanners/__init__.py",
+        "in_degree": 0,
+        "out_degree": 1,
+        "normalized_in": 0.0,
+        "normalized_out": 0.2,
+        "centrality_score": 0.1
+      },
+      {
+        "path": "repomind/scoring/__init__.py",
+        "in_degree": 0,
+        "out_degree": 1,
+        "normalized_in": 0.0,
+        "normalized_out": 0.2,
+        "centrality_score": 0.1
+      }
+    ],
+    "god_module_candidates": [],
+    "layer_violations": []
+  }
+}

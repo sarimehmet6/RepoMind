@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "repomind"
+version = "0.1.0"
+description = "RepoMind: repository audit and analysis."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "click>=8.3",
+    "openai>=1.0",
+    "python-dotenv>=1.0",
+    "rich>=14.3",
+    "typer>=0.24",
+]
+
+[project.scripts]
+repomind = "repomind.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["repomind*"]
